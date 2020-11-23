@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import Image from 'next/image'
+import Navbar from '../components/Navbar/NavBar'
 
 export default function Home() {
+
   return (
     <div className='container'>
       <Head>
@@ -17,17 +19,7 @@ export default function Home() {
         loading='eager'
         priority='true'
       />
-      <header>
-        <nav>
-          {/* <img src="../src/img/navbar-logo.png" alt="StartFlow" class="nav-logo"> */}
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><button href="#" id="contact-button">Contact</button></li>
-          </ul>
-        </nav>
-      </header>
+      <Navbar/>
       <main className='main'>
         <div className='greeting-container'>
           <h2 className='greeting'>
