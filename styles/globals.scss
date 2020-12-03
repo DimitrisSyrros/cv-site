@@ -9,3 +9,18 @@ body {
 * {
     box-sizing: border-box;
 }
+
+.container {
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #292c30;
+    .urban-background {
+        z-index: -1;
+    }
+}
+
+.yellow {
+    color: #ffb400;
+}

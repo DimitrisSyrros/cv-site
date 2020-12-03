@@ -6,27 +6,26 @@ import Router from 'next/router';
 class Navbar extends Component {
     urls = [
         {
+            key:'0',
             name: 'Home',
             pathName: '/#'
         },
         {
-            name: 'Education',
-            pathName: '/education'
+            key:'1',
+            name: 'About Me',
+            pathName: '/about-me'
         },
-        {
-            name: 'Experience',
-            pathName: '/experience'
-        },
+
     ];
     render() {
         return (<header>
             <nav>
                 <ul>
                     {this.urls.map((el) => {
-                        return <li><Link href={el.pathName}><a>{el.name}</a></Link></li>
+                        return <li key={el.key}><Link href={el.pathName}><a>{el.name}</a></Link></li>
                     }
                     )}
-                    <li>
+                    <li key='2'>
                         <button
                             id="contact-button"
                             onClick={()=> Router.push('/contact')}

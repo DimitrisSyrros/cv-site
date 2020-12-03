@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
-import Image from 'next/image'
+import '../styles/Home.module.scss'
 import Navbar from '../components/Navbar/NavBar'
 
 export default function Home() {
@@ -10,16 +9,8 @@ export default function Home() {
       <Head>
         <title>Dimitris Syrros|Frontend-Developer</title>
       </Head>
-      <Image
-        className='urban-background'
-        src="/../public/assets/landingPage.jpg"
-        alt="Urban Landscape"
-        layout='fill'
-        quality='75'
-        loading='eager'
-        priority='true'
-      />
-      <Navbar/>
+      <Navbar />
+      <div className='color-block'></div>
       <main className='main'>
         <div className='greeting-container'>
           <h2 className='greeting'>
@@ -33,9 +24,6 @@ export default function Home() {
         <p>I'm a web developer focusing on front‑end technologies <br /> I aspire to always create clean & user‑friendly experiences,<br /> I am passionate about building excellent software<br /> that improves the lives of those around me.</p>
       </main>
 
-      <footer className={styles.footer}>
-
-      </footer>
     </div>
   )
 
