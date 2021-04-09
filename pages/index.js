@@ -1,30 +1,23 @@
 import Head from 'next/head'
-import '../styles/Home.module.scss'
 import Navbar from '../components/Navbar/NavBar'
+import AboutMe from "./about-me";
+import LandingPage from "./LandingPage";
+import { HomeContainer } from "./Static/HomeStyled"
 
-export default function Home() {
 
-  return (
-    <div className='container'>
-      <Head>
-        <title>Dimitris Syrros|Frontend-Developer</title>
-      </Head>
-      <Navbar />
-      <div className='color-block'></div>
-      <main className='main'>
-        <div className='greeting-container'>
-          <h2 className='greeting'>
-            Hi there,
-        </h2>
-        </div>
-        <div className='introduction'>
-          <p>I'm</p>
-          <p className='yellow'>Dimitris Syrros</p>
-        </div>
-        <p>I'm a web developer focusing on front‑end technologies <br /> I aspire to always create clean & user‑friendly experiences,<br /> I am passionate about building excellent software<br /> that improves the lives of those around me.</p>
-      </main>
+const Home = () => {
 
-    </div>
-  )
+    return (
+        <HomeContainer>
+            <Head>
+                <title>Dimitris Syrros|Frontend-Developer</title>
+            </Head>
+            <Navbar/>
+            <LandingPage />
+            <AboutMe />
+        </HomeContainer>
+    )
 
 }
+
+export default Home;
