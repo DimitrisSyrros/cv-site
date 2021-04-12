@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 
 export const LandingContainer = styled.div`
   padding: 0;
@@ -8,7 +8,7 @@ export const LandingContainer = styled.div`
   margin-left: auto;
   margin-right: 22%;
   align-self: center;
-  margin-top: 18%;
+  margin-top: 26%;
   height: 100vh;
 `;
 
