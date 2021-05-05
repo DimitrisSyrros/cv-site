@@ -76,7 +76,7 @@ export const TimeLineGrid = styled.div`
 
 
 export const AboutMeContainer = styled.div`
-
+    
 `;
 
 export const MainHeader = styled.h2`
@@ -105,13 +105,13 @@ export const Languages = styled.div`
   display: grid;
   grid-template-columns: 30% 30% 30%;
   grid-template-rows: 50% 50%;
-  row-gap: 4%;
+  grid-row-gap: 14%;
   justify-items: start;
   align-items: center;
   justify-content: center;
   align-content: start;
-  margin: 2%;
-  padding: 1%;
+  //margin: 2%;
+  //padding: 1%;
   transform-style: preserve-3d;
 `;
 
@@ -125,7 +125,7 @@ export const Box = styled.div`
   height: 18vh;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 9px 8px 20px 4px #ad8e26;
+  box-shadow: 9px 8px 20px 4px ${ (props) => props.color };
   &:hover {
     .name {
       top: 12vh;
