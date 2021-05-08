@@ -9,6 +9,7 @@ export const LandingContainer = styled.div`
   margin-right: 22%;
   align-self: center;
   margin-top: 26%;
+  min-height: 100vh;
 `;
 
 export const Greeting = styled.h2`

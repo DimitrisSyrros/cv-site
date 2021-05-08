@@ -76,7 +76,7 @@ export const TimeLineGrid = styled.div`
 
 
 export const AboutMeContainer = styled.div`
-    
+    min-height: 100vh;
 `;
 
 export const MainHeader = styled.h2`
