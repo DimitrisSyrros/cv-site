@@ -18,10 +18,17 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    padding: 0px 15px 20px 15px;
+    padding: 0 15px 20px 15px;
     position: relative;
 }
-
+li:first-child {
+    padding: 0!important;
+    position: absolute;
+    left: 8%;
+    #nav-logo {
+        border-radius: 100px;
+    }
+}
 nav ul li a {
     text-decoration: none;
     color: white;
