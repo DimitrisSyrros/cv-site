@@ -3,6 +3,7 @@ import LandingPage from "./LandingPage";
 import { HomeContainer } from "./Static/HomeStyled"
 import EducExp from "./EducExp";
 import Skills from "./skills";
+import AboutMe from "./AboutMe"
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
                 <title>Dimitris Syrros|Frontend-Developer</title>
             </Head>
             <LandingPage />
+            <AboutMe />
             <EducExp />
             <Skills />
         </HomeContainer>

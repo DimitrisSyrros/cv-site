@@ -77,6 +77,7 @@ export const TimeLineGrid = styled.div`
 
 export const AboutMeContainer = styled.div`
     min-height: 100vh;
+    padding: 2%;
 `;
 
 export const MainHeader = styled.h2`
@@ -147,4 +148,26 @@ export const LangName = styled.h5`
   transition: 0.5s;
   opacity: 0;
   z-index: 10;
+`;
+
+export const AboutMeDiv = styled.div`
+  padding: 3%;
+  background: white;
+  color: #292C30;
+  font-weight: 700;
+  text-align: justify;
+  box-shadow: 0 10px 10px -5px;
+  margin-bottom: 15%;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  #profile {
+    border-radius: 50%;
+  }
+  p{
+    padding-left: 4%;
+    font-style: italic;
+  }
 `;

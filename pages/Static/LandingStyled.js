@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const LandingContainer = styled.div`
-  padding: 0;
+  padding: 0 0 20% 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -9,7 +9,6 @@ export const LandingContainer = styled.div`
   margin-right: 22%;
   align-self: center;
   margin-top: 26%;
-  min-height: 100vh;
 `;
 
 export const Greeting = styled.h2`
