@@ -1,12 +1,12 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 export const TimeLineEntry = styled.article`
   width: 100%;
   height: 100%;
-  padding: 4%;
-  margin: 4%;
+  padding-left: 1%;
   border-left: 1.5px solid #333;
+  margin-top: 2%;
   &:hover {
     border-left: 1.5px solid #ffb400;
   }
@@ -62,21 +62,19 @@ export const ReadMoreBtn = styled.button`
 `;
 
 export const TimeLineGrid = styled.div`
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 50% 50%;
+  display: flex;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
   justify-items: start;
   align-items: center;
   justify-content: center;
   align-content: space-evenly;
-  margin: 1% 1% 1% 1%;
-  padding: 1%;
 `;
 
 
 
 export const AboutMeContainer = styled.div`
-    min-height: 100vh;
     padding: 2%;
 `;
 
@@ -105,14 +103,11 @@ export const MainHeaderShadow = styled.h1`
 export const Languages = styled.div`
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 50% 50%;
   grid-row-gap: 14%;
   justify-items: start;
   align-items: center;
   justify-content: center;
   align-content: start;
-  //margin: 2%;
-  //padding: 1%;
   transform-style: preserve-3d;
 `;
 

@@ -9,7 +9,7 @@ const Skills = () => {
 
     return (
         <AboutMeContainer>
-            <SectionHeader>Highlighted Skills</SectionHeader>
+            <SectionHeader>Demonstrated Experience</SectionHeader>
             <Languages>
                 <Title className={'skill'} options={{max: 50, speed: 200}}>
                     <Box
@@ -25,30 +25,6 @@ const Skills = () => {
                     >
                         <LangName className ="name">PHP</LangName>
                         <LangLogo icon={faPhp} size={'3x'} color={"#787CB5"}/>
-                    </Box>
-                </Title>
-                <Title className={'skill'} options={{max: 50, speed: 200}}>
-                    <Box
-                        color={"#E44D26"}
-                    >
-                        <LangName className ="name">HTML</LangName>
-                        <LangLogo icon={faHtml5} size={'3x'} color={"#E44D26"}/>
-                    </Box>
-                </Title>
-                <Title className={'skill'} options={{max: 50, speed: 200}}>
-                    <Box
-                        color={"#CD6799"}
-                    >
-                        <LangName className ="name">SCSS</LangName>
-                        <LangLogo icon={faSass} size={'3x'} color={"#CD6799"}/>
-                    </Box>
-                </Title>
-                <Title className={'skill'} options={{max: 50, speed: 200}}>
-                    <Box
-                        color={"#FFE873"}
-                    >
-                        <LangName className ="name">Python</LangName>
-                        <LangLogo icon={faPython} size={'3x'} color={"#FFE873"}/>
                     </Box>
                 </Title>
                 <Title className={'skill'} options={{max: 50, speed: 200}}>

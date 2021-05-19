@@ -5,11 +5,10 @@ import Image from "next/image";
 const AboutMe = () => {
     return (
         <AboutMeDiv>
-            <Image src="/profile.jpeg" alt="profile_picture" id="profile" width="400" height="400"/>
+            <Image src="/profile.jpeg" alt="profile_picture" id="profile" width="250" height="250"/>
             <p>I'm a web developer focusing on front‑end technologies
-                I aspire to create clean and user‑friendly experiences and I am passionate
-                about building quality software that improves the lives of those around me.
-                I am a motivated, self - driven and detail oriented. I strive to cultivate and hone my skills set to become even more adaptive to new challenges,
+                and aspire to create clean and user‑friendly experiences.
+                I strive to cultivate and hone my skill set to be adaptive to new challenges,
                 a strong team player and a critical thinker.</p>
         </AboutMeDiv>
     )

@@ -1,14 +1,22 @@
 import styled from 'styled-components';
 
 export const LandingContainer = styled.div`
-  padding: 0 0 20% 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-left: auto;
-  margin-right: 22%;
-  align-self: center;
-  margin-top: 26%;
+  flex-wrap: wrap;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const GreetingWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  @media only screen and (min-width: 1024px) {
+    margin-left: auto;
+    margin-right: 22%;
+    margin-top: 8%;
+  }
 `;
 
 export const Greeting = styled.h2`
@@ -18,6 +26,7 @@ export const Greeting = styled.h2`
   margin: 0;
   letter-spacing: .15em;
   animation: typing 0.9s steps(40, end), blink-caret 0.75s step-end infinite;
+  width: fit-content;
   
   @keyframes typing {
     from {
@@ -42,11 +51,10 @@ export const Greeting = styled.h2`
 
 export const Introduction = styled.div`
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  font-size: xxx-large;
+  font-size: 36px;
   font-weight: 700;
   white-space: nowrap;
+  display: flex;
   p {
     margin-top: 0;
     margin-bottom: 0;

@@ -1,45 +1,25 @@
 export const timelineData = [
     {
-        "timeStamp": "2009",
-        "entryTitle": "Certificate of Proficiency in English from the University of Michigan",
-        "subHeader": "Level: C2 Overall Grade of Degree PASS",
-        "type": "faUniversity"
+        "timeStamp": "From April/2019 to January/2020 and From November 2020 until now",
+        "entryTitle": "Intrasoft Intl. - Software Engineer/Web Developer",
+        "details": "Working closely with Intralot intergrating and developing Intralot's Canvas software for various national betting providers around the world",
+        "type": "faBriefcase",
+        "readMore" :["Developing interfaces using React.js ( Hooks, Redux ) and Styled Components/SASS","Involved with API development using PHP 7+ and following the MVC design pattern","Implementing changes needed for caching and websocket mechanisms, using Golang and Redis"]
     },
     {
-        "timeStamp": "From 2009 to 2012",
-        "entryTitle": "General Lyceum - General High School Diploma",
-        "subHeader": "Grade Excellent (19)",
-        "type": "faUniversity"
+        "timeStamp": "From January/2020 to October/2020",
+        "entryTitle": "Centre of Information Technology Support of the Hellenic Army (KEPYES) - Web Developer/Analyst/Infantry Soldier",
+        "details": "Worked on a multi-tenant internal project used by Greek Millitary hospitals.",
+        "type": "faBriefcase",
+        "readMore" :["Developed admin and client-side features using React.js (Redux, Ant Design/Semantic UI, SASS)","Implemented new services using PHP 7+ (Symfony 2) and PL/SQL","Utilized established Scrum methodologies."]
+
     },
     {
         "timeStamp": "From September/2012 To April/2019",
         "entryTitle": "Integrated Masters Degree - Computer Engineering & Informatics Department (CEID) of the University of Patras",
-        "details": "As part of my thesis dissertation titled : Detecting cyber-bullying on social networks using natural language processing and machine learning...",
+        "details": "Thesis dissertation: Detecting cyber-bullying on social networks using natural language processing and machine learning",
         "type": "faUniversity",
-        "readMore" :"As part of my thesis dissertation titled : Detecting cyber-bullying on social networks using natural language processing and machine learning"
+        "readMore" :["As part of my thesis dissertation titled : Detecting cyber-bullying on social networks using natural language processing and machine learning"]
     },
-    {
-        "timeStamp": "From April/2019 to January/2020",
-        "entryTitle": "Intrasoft Intl. - Software Engineer",
-        "details": "Worked as a web developer on high-scale, multi-tenant projects in the field of betting...",
-        "type": "faBriefcase",
-        "readMore" :"Worked as a web developer on high-scale, multi-tenant projects in the field of betting"
 
-    },
-    {
-        "timeStamp": "From January/2020 to October/2020",
-        "entryTitle": "Centre of Iformation Techonology Support of the Hellenic Army (KEPYES) - Software Engineer/Ifantry Soldier",
-        "details": "As a Greek citizen i  served for a 9-month term for the Greek Army where...",
-        "type": "faBriefcase",
-        "readMore" :"As a Greek citizen i  served for a 9-month term for the Greek Army where"
-
-    },
-    {
-        "timeStamp": "From November 2020 untill now",
-        "entryTitle": "Intrasoft Intl. - Software Engineer",
-        "details": "Currently employed as a web developer on high-scale, multi-tenant projects in the field of betting...",
-        "type": "faBriefcase",
-        "readMore" :"Currently employed as a web developer on high-scale, multi-tenant projects in the field of betting"
-
-    }
 ]
