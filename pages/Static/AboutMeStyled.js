@@ -9,6 +9,8 @@ export const TimeLineEntry = styled.article`
   margin-top: 2%;
   &:hover {
     border-left: 1.5px solid #ffb400;
+    // background: url(${props => props.background}) no-repeat center center;
+    // opacity: 0.3;
   }
 `;
 
@@ -38,9 +40,6 @@ export const SectionHeader = styled.h3`
   text-align: center;
 `;
 
-export const SubHeader = styled.p`
-
-`;
 
 export const TimeLineDetails = styled.p`
   font-size: medium;
@@ -67,7 +66,7 @@ export const TimeLineGrid = styled.div`
     flex-direction: column;
   }
   justify-items: start;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   align-content: space-evenly;
 `;

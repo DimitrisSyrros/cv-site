@@ -5,7 +5,7 @@ const Navbar = () => {
 
     return (
         <NavbarContainer>
-            <NavLogo src="/my-logo.png" alt="myLogo" width="80" height="80"/>
+            <NavLogo src="/my-logo.png" alt="myLogo" width="60" height="60"/>
             <NavContent>
                 <NavOption>Home</NavOption>
                 <NavOption>About Me</NavOption>

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../styles/AboutMePage.module.scss';
 import { AboutMeContainer, EntryTitle, MainHeader, MainHeaderShadow,
-        TimeLineEntry, SectionHeader, LangLogo, SubHeader, ReadMoreBtn, TimeLineDetails,
+        TimeLineEntry, SectionHeader, LangLogo,  TimeLineDetails,
         TimeLineGrid, Timestamp } from './Static/AboutMeStyled';
 import {timelineData} from './timeline';
 import {faBriefcase, faUniversity} from '@fortawesome/free-solid-svg-icons';
@@ -12,7 +12,7 @@ const EducExp = () => {
     const [modalTitle, setModalTitle] = useState("");
     const [modalContent, setModalContent] = useState("");
     const list = timelineData.map((item, index) =>
-        <TimeLineEntry key={index}>
+        <TimeLineEntry key={index} background={item.background}>
             {
                 item.type === "faUniversity" ?
                     <LangLogo icon={faUniversity} color={"#ffb200"}/>
@@ -20,15 +20,14 @@ const EducExp = () => {
             }
             <Timestamp>{item.timeStamp}</Timestamp>
             <EntryTitle>{item.entryTitle}</EntryTitle>
-            <SubHeader>{item.subHeader}</SubHeader>
             <TimeLineDetails>{item.details}</TimeLineDetails>
+            <ul>
             {
-                item.details && <ReadMoreBtn onClick={() => {
-                    setShowModal(true)
-                    setModalTitle(item.entryTitle)
-                    setModalContent(item.readMore)
-                }}>Read More</ReadMoreBtn>
+                item.readMore.map((item, index)=>{
+                    return <li style={{fontSize:'14px', fontWeight:'400'}}>{item}</li>
+                })
             }
+            </ul>
             <Modal
                 onClose={() => setShowModal(false)}
                 show={showModal}

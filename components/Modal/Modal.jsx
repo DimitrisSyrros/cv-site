@@ -17,17 +17,13 @@ const Modal = ({ onClose, children, show, title }) => {
     };
     console.log(children)
 
-    const ul_children = children.length !=0 ?<ul>
-        {
-            children.map((item)=><li>{item}</li>)
-        }
-    </ul> : {};
+
     const modalContent = (
         <StyledModalOverlay>
             <StyledModalWrapper ref={modalWrapperRef}>
                 <StyledModal>
                     <StyledModalHeader>
-                        <FontAwesomeIcon icon={faTimesCircle} size={'x'} color={'white'} onClick={handleCloseClick}/>
+                        <FontAwesomeIcon icon={faTimesCircle} color={'white'} onClick={handleCloseClick}/>
                     </StyledModalHeader>
                     {title && <StyledModalTitle>{title}</StyledModalTitle>}
                     <StyledModalBody>{children}</StyledModalBody>

@@ -1,7 +1,9 @@
 import styled, {css} from 'styled-components';
 
 export const StyledModalBody = styled.div`
-  padding-top: 10px;
+  margin: 10px 0;
+  width: 100%;
+  padding: 0;
 `;
 
 export const StyledModalHeader = styled.div`

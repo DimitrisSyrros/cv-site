@@ -11,7 +11,7 @@ export const NavbarContainer = styled.header`
   flex-direction: row;
   justify-content: space-evenly;
   z-index:5;
-  padding: 25px 0 25px 25px;
+  padding: 10px 0 10px 25px;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
   @media only screen and (min-width: 1024px) {
     justify-content: center;
