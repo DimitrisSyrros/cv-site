@@ -5,12 +5,8 @@ import { AboutMeContainer, EntryTitle, MainHeader, MainHeaderShadow,
         TimeLineGrid, Timestamp } from './Static/AboutMeStyled';
 import {timelineData} from './timeline';
 import {faBriefcase, faUniversity} from '@fortawesome/free-solid-svg-icons';
-import Modal from "../components/Modal/Modal";
 
 const EducExp = () => {
-    const [showModal, setShowModal] = useState(false);
-    const [modalTitle, setModalTitle] = useState("");
-    const [modalContent, setModalContent] = useState("");
     const list = timelineData.map((item, index) =>
         <TimeLineEntry key={index} background={item.background}>
             {
@@ -28,13 +24,6 @@ const EducExp = () => {
                 })
             }
             </ul>
-            <Modal
-                onClose={() => setShowModal(false)}
-                show={showModal}
-                title={modalTitle}
-            >
-                {modalContent}
-            </Modal>
         </TimeLineEntry>
     );
     return (

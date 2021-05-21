@@ -1,10 +1,20 @@
 import styled from 'styled-components';
 
 export const LandingContainer = styled.div`
+  height: 100vh;
+  background: url("../../Landing_page.jpg") no-repeat no-repeat center center;
+  background-size: cover;
+  @media only screen and (max-width: 425px) {
+    background: url("../../Landing_page.jpg") no-repeat no-repeat center right;
+  }
+`;
+
+export const BackgroundOverlay = styled.div`
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: 100vh;
   align-items: center;
   justify-content: center;
 `;
