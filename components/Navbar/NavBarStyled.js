@@ -30,7 +30,7 @@ export const NavContent = styled.div`
 
 export const NavOption = styled.p`
   text-decoration: none;
-  color: white;
+  color: #eaeaea;
   font-size: 16px;
   font-weight: 400;
   display: block;

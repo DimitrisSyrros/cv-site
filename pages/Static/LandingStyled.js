@@ -73,5 +73,5 @@ export const Introduction = styled.div`
 `;
 
 export const Name = styled.p`
-  color: #ffb400;
+  color: #f9c959;
 `;

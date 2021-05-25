@@ -1,10 +1,10 @@
-import React from "react";
+import React, {forwardRef} from "react";
 import {LandingContainer, Greeting, Introduction, Name, GreetingWrapper, BackgroundOverlay} from './Static/LandingStyled';
 
-const LandingPage = () => {
+const LandingPage = forwardRef((props,ref) => {
 
     return (
-        <LandingContainer>
+        <LandingContainer ref={ref}>
             <BackgroundOverlay>
                 <GreetingWrapper>
                     <Greeting>
@@ -20,6 +20,6 @@ const LandingPage = () => {
         </LandingContainer>
     )
 
-}
+})
 
 export default LandingPage;

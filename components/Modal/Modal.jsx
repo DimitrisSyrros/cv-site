@@ -15,7 +15,6 @@ const Modal = ({ onClose, children, show, title }) => {
         e.preventDefault();
         onClose();
     };
-    console.log(children)
 
 
     const modalContent = (

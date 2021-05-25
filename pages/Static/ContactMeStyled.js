@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const ContactMeWrapper = styled.section`
   padding-top: 15%;
+  padding-bottom: 10%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -23,6 +24,12 @@ export const StyledPar = styled.p`
     transition: 0.3s ease-in;
     color: #F00001;
   }
+`;
+
+export const InfoBox = styled.div`
+  padding: 2%;
+  border-radius: 12px;
+  box-shadow: -5px -5px 30px 5px #fe5848, 5px 5px 30px 5px #006792;
 `;
 
 export const StyledAnchor = styled.a`

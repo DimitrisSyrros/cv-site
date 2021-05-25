@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
+import React, {forwardRef, useState} from 'react';
 import '../styles/AboutMePage.module.scss';
 import { AboutMeContainer, EntryTitle, MainHeader, MainHeaderShadow,
         TimeLineEntry, SectionHeader, LangLogo,  TimeLineDetails,
-        TimeLineGrid, Timestamp } from './Static/AboutMeStyled';
+        TimeLineGrid, Timestamp, YellowSpan } from './Static/AboutMeStyled';
 import {timelineData} from './timeline';
 import {faBriefcase, faUniversity} from '@fortawesome/free-solid-svg-icons';
 
-const EducExp = () => {
+const EducExp = forwardRef((props,ref) => {
     const list = timelineData.map((item, index) =>
         <TimeLineEntry key={index} background={item.background}>
             {
@@ -20,15 +20,15 @@ const EducExp = () => {
             <ul>
             {
                 item.readMore.map((item, index)=>{
-                    return <li style={{fontSize:'14px', fontWeight:'400'}}>{item}</li>
+                    return <li style={{fontSize:'14px', fontWeight:'400', paddingBottom:"1%"}}>{item}</li>
                 })
             }
             </ul>
         </TimeLineEntry>
     );
     return (
-        <AboutMeContainer>
-                <MainHeader>About <span className="yellow">Me</span></MainHeader>
+        <AboutMeContainer ref={ref}>
+                <MainHeader>About <YellowSpan>Me</YellowSpan></MainHeader>
                 <MainHeaderShadow>Resume</MainHeaderShadow>
                 <SectionHeader>Education <span className="yellow">&</span> Experience</SectionHeader>
                 <TimeLineGrid>
@@ -36,6 +36,6 @@ const EducExp = () => {
                 </TimeLineGrid>
         </AboutMeContainer>
     );
-}
+})
 
 export default EducExp;

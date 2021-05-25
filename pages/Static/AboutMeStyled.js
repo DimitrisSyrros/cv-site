@@ -30,8 +30,13 @@ export const Timestamp = styled.span`
   opacity: .8;
 `;
 
-export const EntryTitle = styled.h4`
+export const YellowSpan = styled.span`
+  color: #f9c959;
+`;
 
+export const EntryTitle = styled.h4`
+  color: #f9c959;
+  font-weight: 300;
 `;
 
 export const SectionHeader = styled.h3`
@@ -43,6 +48,7 @@ export const SectionHeader = styled.h3`
 
 export const TimeLineDetails = styled.p`
   font-size: medium;
+  color: #d3dbe8;
 `;
 
 export const ReadMoreBtn = styled.button`
@@ -74,7 +80,7 @@ export const TimeLineGrid = styled.div`
 
 
 export const AboutMeContainer = styled.div`
-    padding: 2%;
+    padding: 3%;
 `;
 
 export const MainHeader = styled.h2`
@@ -146,7 +152,7 @@ export const LangName = styled.h5`
 
 export const AboutMeDiv = styled.div`
   padding: 3%;
-  background: white;
+  background: #eaeaea;
   color: #292C30;
   font-weight: 700;
   text-align: justify;
