@@ -1,5 +1,4 @@
 import React, {forwardRef, useState} from 'react';
-import '../styles/AboutMePage.module.scss';
 import { AboutMeContainer, EntryTitle, MainHeader, MainHeaderShadow,
         TimeLineEntry, SectionHeader, LangLogo,  TimeLineDetails,
         TimeLineGrid, Timestamp, YellowSpan } from './Static/AboutMeStyled';
@@ -30,7 +29,7 @@ const EducExp = forwardRef((props,ref) => {
         <AboutMeContainer ref={ref}>
                 <MainHeader>About <YellowSpan>Me</YellowSpan></MainHeader>
                 <MainHeaderShadow>Resume</MainHeaderShadow>
-                <SectionHeader>Education <span className="yellow">&</span> Experience</SectionHeader>
+                <SectionHeader>Education <YellowSpan>&</YellowSpan> Experience</SectionHeader>
                 <TimeLineGrid>
                     {list}
                 </TimeLineGrid>

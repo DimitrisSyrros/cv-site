@@ -1,5 +1,7 @@
 import styled, {css} from 'styled-components';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import Title from 'react-vanilla-tilt';
+
 
 export const TimeLineEntry = styled.article`
   width: 100%;
@@ -9,8 +11,6 @@ export const TimeLineEntry = styled.article`
   margin-top: 2%;
   &:hover {
     border-left: 1.5px solid #ffb400;
-    // background: url(${props => props.background}) no-repeat center center;
-    // opacity: 0.3;
   }
 `;
 
@@ -170,4 +170,11 @@ export const AboutMeDiv = styled.div`
     padding-left: 4%;
     font-style: italic;
   }
+`;
+
+export const Skill = styled(Title)`
+  background: #373A3E !important;
+  border-radius: 20px;
+  padding: 0!important;
+  width: inherit!important;
 `;
