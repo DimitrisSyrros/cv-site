@@ -23,7 +23,7 @@ export const LangLogo = styled(FontAwesomeIcon)`
 `;
 
 export const Timestamp = styled.span`
-  color: #fff;
+  color: #ffffff;
   font-size: small;
   padding: 5px 10px;
   border-radius: 20px;
