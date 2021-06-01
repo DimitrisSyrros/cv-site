@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {NavbarContainer, NavLogo, NavOption, NavContent, BurgerNav} from "./NavbarStyled"
+import {NavbarContainer, NavLogo, NavOption, NavContent, BurgerNav} from "../../styles/NavBarStyled"
 import DownloadFile from "../DownloadFile/DownloadFile"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFilePdf} from "@fortawesome/free-regular-svg-icons";
