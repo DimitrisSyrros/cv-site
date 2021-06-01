@@ -1,8 +1,8 @@
 import React, {forwardRef} from 'react';
 import { AboutMeContainer, EntryTitle, MainHeader, MainHeaderShadow,
         TimeLineEntry, SectionHeader, LangLogo,  TimeLineDetails,
-        TimeLineGrid, Timestamp, YellowSpan, TopSection } from './Static/AboutMeStyled';
-import {timelineData} from './timeline';
+        TimeLineGrid, Timestamp, YellowSpan, TopSection } from '../styles/AboutMeStyled';
+import {timelineData} from '../public/timeline';
 import {faBriefcase, faUniversity} from '@fortawesome/free-solid-svg-icons';
 
 const EducExp = forwardRef((props,ref) => {

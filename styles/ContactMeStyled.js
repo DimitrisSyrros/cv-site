@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import DownloadFile from "../../components/DownloadFile/DownloadFile";
 
 export const ContactMeWrapper = styled.section`
   padding-top: 15%;

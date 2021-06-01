@@ -1,6 +1,6 @@
 import React, {forwardRef} from 'react';
 import Image from "next/image";
-import {ContactMeWrapper, StyledAnchor, ContactInfo, StyledPar, InfoBox, ContactLink, ContactLogo} from "./Static/ContactMeStyled";
+import {ContactMeWrapper, StyledAnchor, ContactInfo, StyledPar, InfoBox, ContactLink, ContactLogo} from "../styles/ContactMeStyled";
 import {faEnvelope, faFilePdf} from "@fortawesome/free-regular-svg-icons";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 

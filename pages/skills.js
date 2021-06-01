@@ -1,5 +1,5 @@
 import React from 'react';
-import { LangName, Box, Languages, AboutMeContainer, SectionHeader, LangLogo, Skill } from './Static/AboutMeStyled';
+import { LangName, Box, Languages, AboutMeContainer, SectionHeader, LangLogo, Skill } from '../styles/AboutMeStyled';
 import {faPhp, faReact} from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
 

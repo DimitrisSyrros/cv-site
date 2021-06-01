@@ -1,5 +1,5 @@
 import React, {forwardRef} from "react";
-import {LandingContainer, Greeting, Introduction, Name, GreetingWrapper, BackgroundOverlay} from './Static/LandingStyled';
+import {LandingContainer, Greeting, Introduction, Name, GreetingWrapper, BackgroundOverlay} from '../styles/LandingStyled';
 
 const LandingPage = forwardRef((props,ref) => {
 

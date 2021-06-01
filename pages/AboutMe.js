@@ -1,5 +1,5 @@
 import React from 'react';
-import {AboutMeDiv} from "./Static/AboutMeStyled";
+import {AboutMeDiv} from "../styles/AboutMeStyled";
 import Image from "next/image";
 
 const AboutMe = () => {
