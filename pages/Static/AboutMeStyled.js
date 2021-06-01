@@ -4,11 +4,15 @@ import Title from 'react-vanilla-tilt';
 
 
 export const TimeLineEntry = styled.article`
-  width: 100%;
+  width: 70%;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
   height: 100%;
   padding-left: 1%;
   border-left: 1.5px solid #333;
   margin-top: 2%;
+
   &:hover {
     border-left: 1.5px solid #ffb400;
   }
@@ -22,8 +26,6 @@ export const Timestamp = styled.span`
   color: #fff;
   font-size: small;
   padding: 5px 10px;
-  display: inline-block;
-  margin-bottom: 12px;
   border-radius: 20px;
   font-weight: 600;
   background-color: #252525;
@@ -61,6 +63,7 @@ export const ReadMoreBtn = styled.button`
   background-size: 300%;
   background-position: left;
   transition: background-position 650ms;
+
   &:hover {
     background-position: right;
   }
@@ -68,20 +71,29 @@ export const ReadMoreBtn = styled.button`
 
 export const TimeLineGrid = styled.div`
   display: flex;
+  flex-direction: column;
   @media only screen and (max-width: 768px) {
     flex-direction: column;
+    align-items: stretch;
   }
   justify-items: start;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
   align-content: space-evenly;
 `;
 
 
-
 export const AboutMeContainer = styled.div`
-    padding: 3%;
+  padding: 3%;
 `;
+
+export const TopSection = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+`;
+
 
 export const MainHeader = styled.h2`
   text-align: center;
@@ -126,7 +138,8 @@ export const Box = styled.div`
   height: 18vh;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 9px 8px 20px 4px ${ (props) => props.color };
+  box-shadow: 9px 8px 20px 4px ${(props) => props.color};
+
   &:hover {
     .name {
       top: 12vh;
@@ -163,10 +176,12 @@ export const AboutMeDiv = styled.div`
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+
   #profile {
     border-radius: 50%;
   }
-  p{
+
+  p {
     padding-left: 4%;
     font-style: italic;
   }
@@ -175,6 +190,6 @@ export const AboutMeDiv = styled.div`
 export const Skill = styled(Title)`
   background: #373A3E !important;
   border-radius: 20px;
-  padding: 0!important;
-  width: inherit!important;
+  padding: 0 !important;
+  width: inherit !important;
 `;

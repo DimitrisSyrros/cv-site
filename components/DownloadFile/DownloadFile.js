@@ -1,8 +1,8 @@
 import React from "react";
 
-const DownloadFile = ({children, src}) => {
+const DownloadFile = ({children, src, styles}) => {
     return (
-        <a href={src} style={{color: "white", textDecoration:"none"}} download>{children}</a>
+        <a href={src} style={styles} download>{children}</a>
     )
 }
 

@@ -1,19 +1,21 @@
-import React, {forwardRef, useState} from 'react';
+import React, {forwardRef} from 'react';
 import { AboutMeContainer, EntryTitle, MainHeader, MainHeaderShadow,
         TimeLineEntry, SectionHeader, LangLogo,  TimeLineDetails,
-        TimeLineGrid, Timestamp, YellowSpan } from './Static/AboutMeStyled';
+        TimeLineGrid, Timestamp, YellowSpan, TopSection } from './Static/AboutMeStyled';
 import {timelineData} from './timeline';
 import {faBriefcase, faUniversity} from '@fortawesome/free-solid-svg-icons';
 
 const EducExp = forwardRef((props,ref) => {
     const list = timelineData.map((item, index) =>
-        <TimeLineEntry key={index} background={item.background}>
+        <TimeLineEntry key={index}>
+            <TopSection>
             {
                 item.type === "faUniversity" ?
                     <LangLogo icon={faUniversity} color={"#ffb200"}/>
                     : <LangLogo icon={faBriefcase} color={"#ffb200"}/>
             }
             <Timestamp>{item.timeStamp}</Timestamp>
+            </TopSection>
             <EntryTitle>{item.entryTitle}</EntryTitle>
             <TimeLineDetails>{item.details}</TimeLineDetails>
             <ul>

@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import DownloadFile from "../../components/DownloadFile/DownloadFile";
 
 export const ContactMeWrapper = styled.section`
   padding-top: 15%;
@@ -15,8 +17,21 @@ export const ContactMeWrapper = styled.section`
 `;
 
 export const ContactInfo = styled.div`
-  text-align: center;
   padding-bottom: 10%;
+`;
+
+export const ContactLink = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: justify;
+  align-items: center;
+  font-size: 0.8rem;
+  padding-left: 21%;
+`;
+
+export const ContactLogo = styled(FontAwesomeIcon)`
+  margin-right: 2%;
 `;
 
 export const StyledPar = styled.p`
@@ -35,7 +50,6 @@ export const InfoBox = styled.div`
 export const StyledAnchor = styled.a`
   text-decoration: none;
   color: white;
-  font-style: italic;
     &:hover{
       cursor: pointer;
       transition: 0.3s ease-in;
