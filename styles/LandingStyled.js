@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const LandingContainer = styled.div`
   height: 100vh;
@@ -65,13 +65,14 @@ export const Introduction = styled.div`
   font-weight: 700;
   white-space: nowrap;
   display: flex;
-  p {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 2%;
-  }
 `;
 
-export const Name = styled.p`
-  color: #f9c959;
+export const Name = styled.h1`
+  font-size: 38px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 2%;
+  ${ ( props ) => props.className === "yellow" && css `
+    color: #f9c959;
+  `}
 `;

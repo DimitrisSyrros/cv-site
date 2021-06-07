@@ -11,8 +11,8 @@ const LandingPage = forwardRef((props,ref) => {
                         Hi there,
                     </Greeting>
                     <Introduction>
-                        <p>I'm</p>
-                        <Name>Dimitris Syrros</Name>
+                        <Name>I'm</Name>
+                        <Name className="yellow">Dimitris Syrros</Name>
                     </Introduction>
                     <p>I make fun things for the web.</p>
                 </GreetingWrapper>
