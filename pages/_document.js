@@ -13,11 +13,11 @@ export default class MyDocument extends Document {
 
     render() {
         return (
-            <Html>
+            <Html lang="en">
                 <Head>
                     {this.props.styleTags}
                     <link rel="preconnect" href="https://fonts.gstatic.com"/>
-                        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="preload"/>
+                        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet"/>
                     <meta name="description" content="This site is a portfolio for Dimitris Syrros. Here you can get information about him,
                      download his resume and get in contact with him."/>
                     <title>Dimitris Syrros | Frontend Developer</title>

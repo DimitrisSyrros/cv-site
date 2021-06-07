@@ -16,9 +16,6 @@ const Home = () => {
     return (
         <HomeContainer>
             <GlobalStyle/>
-            <Head>
-                <title>Dimitris Syrros | Frontend Developer</title>
-            </Head>
             <Navbar refs={{homeRef,aboutMeRef,contactRef}}/>
             <LandingPage ref={homeRef}/>
             <AboutMe/>
