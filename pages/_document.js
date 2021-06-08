@@ -20,7 +20,6 @@ export default class MyDocument extends Document {
                         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet"/>
                     <meta name="description" content="This site is a portfolio for Dimitris Syrros. Here you can get information about him,
                      download his resume and get in contact with him."/>
-                    <title>Dimitris Syrros | Frontend Developer</title>
                 </Head>
                 <body>
                 <Main/>

@@ -53,21 +53,6 @@ export const TimeLineDetails = styled.p`
   color: #d3dbe8;
 `;
 
-export const ReadMoreBtn = styled.button`
-  color: white;
-  border: 0;
-  cursor: pointer;
-  border-radius: 20px;
-  padding: .5em 1.25em;
-  background: linear-gradient(90deg, #ad8e26, #665d07, #e6990b);
-  background-size: 300%;
-  background-position: left;
-  transition: background-position 650ms;
-
-  &:hover {
-    background-position: right;
-  }
-`;
 
 export const TimeLineGrid = styled.div`
   display: flex;
@@ -109,11 +94,11 @@ export const MainHeaderShadow = styled.h1`
   line-height: 0.7;
   text-transform: uppercase;
   font-weight: 800;
-  -webkit-transform: translateY(-183%);
-  -moz-transform: translateY(-183%);
-  -ms-transform: translateY(-183%);
-  -o-transform: translateY(-183%);
-  transform: translateY(-183%);
+  -webkit-transform: translateY(${ (props) => props.transformation });
+  -moz-transform: translateY(${ (props) => props.transformation });
+  -ms-transform: translateY(${ (props) => props.transformation });
+  -o-transform: translateY(${ (props) => props.transformation });
+  transform: translateY(${ (props) => props.transformation });
   color: rgba(255, 255, 255, 0.068);
 `;
 

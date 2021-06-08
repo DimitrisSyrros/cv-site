@@ -1,15 +1,21 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export const ContactMeWrapper = styled.section`
-  padding-top: 15%;
-  padding-bottom: 10%;
+  padding: 3%;
+`;
+
+export const MainWrapper = styled.section`
+  padding-bottom: 15%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
   #profile{
     border-radius: 50%;
   }
@@ -54,4 +60,64 @@ export const StyledAnchor = styled.a`
       transition: 0.3s ease-in;
       color: #0072b1;
     }
+`;
+
+export const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  @media only screen and (max-width: 768px) {
+    margin-left: 0;
+    margin-top: 15%;
+    width: 89%;
+    height: 90vh;
+  }
+  padding: 1%;
+  align-items: stretch;
+  border-radius: 10px;
+  box-shadow: -5px -5px 30px 5px #397b68, 5px 5px 30px 5px #006792;
+  width: 40%;
+`;
+export const StyledInput = styled.input`
+  padding: 1%;
+  margin: 2%;
+  border-radius: 10px;
+
+`;
+export const SubmitButton = styled.button`
+  margin: 2%;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: .5em 1.25em;
+  background: linear-gradient(90deg, #397b68, #073a66, #006792);
+  background-size: 300%;
+  background-position: left;
+  transition: background-position 950ms;
+  ${ (props) => props.disabled === true && css`
+    background: dimgray;
+    cursor: wait;
+  ` }
+  &:hover {
+    background-position: right;
+  }
+  
+`;
+export const ErrorMessage = styled.span`
+  color: red;
+  margin-left: 2%;
+`;
+
+export const FormTextArea = styled.textarea`
+  height: 100px;
+  margin: 2%;
+  border-radius: 10px;
+  max-height: 30vh;
+  max-width: 34vw;
+  @media only screen and (max-width: 768px) {
+    max-width: 85vw;
+    max-height: 50vh;
+
+  }
 `;

@@ -15,15 +15,20 @@
     "@fortawesome/react-fontawesome": "^0.1.13",
     "@webdeb/next-styles": "^1.1.1",
     "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
     "next": "10.0.2",
+    "nodemailer": "^6.6.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-hook-form": "^7.8.1",
     "react-router-dom": "^5.2.0",
     "react-vanilla-tilt": "^1.0.0",
     "sass": "^1.29.0",
     "styled-components": "^5.2.3"
   },
   "devDependencies": {
+    "dotenv-webpack": "^7.0.3",
     "file-loader": "^6.2.0"
   }
 }

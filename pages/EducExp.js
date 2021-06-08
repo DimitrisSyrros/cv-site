@@ -30,7 +30,7 @@ const EducExp = forwardRef((props,ref) => {
     return (
         <AboutMeContainer ref={ref}>
                 <MainHeader>About <YellowSpan>Me</YellowSpan></MainHeader>
-                <MainHeaderShadow>Resume</MainHeaderShadow>
+                <MainHeaderShadow transformation="-183%">Resume</MainHeaderShadow>
                 <SectionHeader>Education <YellowSpan>&</YellowSpan> Experience</SectionHeader>
                 <TimeLineGrid>
                     {list}

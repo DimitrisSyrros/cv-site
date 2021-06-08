@@ -81,18 +81,3 @@ export const BurgerNav = styled(FontAwesomeIcon)`
   }
 `;
 
-export const ContactButton = styled.button`
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  border: thin solid #ffb400;
-  background: transparent;
-  padding: 0 7%;
-  @media only screen and (min-width: 1024px) {
-    padding: 0 2%;
-  }
-  &:hover {
-    background-color: #ffb400;
-    color: #071e57;
-    cursor: pointer;
-`;
