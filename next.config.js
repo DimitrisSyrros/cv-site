@@ -1,19 +1,6 @@
 const Dotenv = require("dotenv-webpack");
 
 module.exports = {
-    async headers() {
-        return [
-            {
-                source: '/api/contact',
-                headers: [
-                    {
-                        key:'Content-Type',
-                        value: 'application/json'
-                    },
-                ],
-            },
-        ]
-    },
     webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
         config.plugins.push(new Dotenv({ silent: true }));
         const rules = [
