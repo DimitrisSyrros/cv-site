@@ -10,9 +10,6 @@ export default function ContactForm() {
         let config = {
             method: 'post',
             url: `/api/contact`,
-            headers: {
-                'Content-Type': 'application/json'
-            },
             data: data,
         };
         try{
@@ -25,6 +22,7 @@ export default function ContactForm() {
             }
         }catch (error){
             alert("Something went wrong. Please try again. Or copy my email by clicking on it, on my contact info")
+            setSubmit(false)
         }
     }
 
