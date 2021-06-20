@@ -18,13 +18,13 @@ const EducExp = forwardRef((props,ref) => {
             </TopSection>
             <EntryTitle>{item.entryTitle}</EntryTitle>
             <TimeLineDetails>{item.details}</TimeLineDetails>
-            <ul>
+
             {
                 item.readMore.map((item, index)=>{
-                    return <li style={{fontSize:'14px', fontWeight:'400', paddingBottom:"1%"}}>{item}</li>
+                    return <p style={{fontSize:'14px', fontWeight:'400'}}>{item}</p>
                 })
             }
-            </ul>
+
         </TimeLineEntry>
     );
     return (

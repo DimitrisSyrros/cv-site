@@ -25,7 +25,7 @@ const ContactMe = forwardRef((props, ref) => {
                 <InfoBox>
                     <Image src="/profile.jpeg" alt="profile_picture" id="profile" width="300" height="300"/>
                     <ContactInfo>
-                        <h2>Feel free to contact me.</h2>
+                        <h2>Feel free to <YellowSpan>contact</YellowSpan> me.</h2>
                         <ContactLink>
                             <ContactLogo icon={faLinkedin}/>
                             <StyledAnchor

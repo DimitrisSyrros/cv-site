@@ -7,7 +7,6 @@ import AboutMe from "./AboutMe"
 import ContactMe from "./ContactMe";
 import Navbar from "../components/Navbar/NavBar";
 import {GlobalStyle} from "../styles/Globals";
-import siteImg from "../public/profile.jpeg"
 
 const Home = () => {
     const homeRef = useRef(null)
@@ -31,7 +30,7 @@ const Home = () => {
             <Head>
                 <title>Dimitris Syrros | Frontend-Developer</title>
                 <meta property="og:url" content="www.dsyrros.com" key="ogurl" />
-                <meta property="og:image" content={siteImg} key="ogimage" />
+                <meta property="og:image" content="public/profile.jpeg" key="ogimage" />
                 <meta property="og:site_name" content="Dimitris Syrros | Frontend-Developer" key="ogsitename" />
                 <meta property="og:title" content="Dimitris Syrros | Frontend-Developer" key="ogtitle" />
                 <meta property="og:description" content="This site is a portfolio for Dimitris Syrros. Here you can get information about him,

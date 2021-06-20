@@ -23,6 +23,11 @@ export const MainWrapper = styled.div`
 
 export const ContactInfo = styled.div`
   padding-bottom: 10%;
+  h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
 `;
 
 export const ContactLink = styled.div`
@@ -114,7 +119,7 @@ export const FormTextArea = styled.textarea`
   margin: 2%;
   border-radius: 10px;
   max-height: 30%;
-  max-width: 34%;
+  max-width: 90%;
   @media only screen and (max-width: 768px) {
     max-width: 85%;
     max-height: 50%;

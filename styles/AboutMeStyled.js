@@ -38,13 +38,15 @@ export const YellowSpan = styled.span`
 
 export const EntryTitle = styled.h4`
   color: #f9c959;
-  font-weight: 300;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;  
   font-size: 19px;
 `;
 
 export const SectionHeader = styled.h3`
   font-size: 24px;
-  font-style: italic;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;  
   text-align: center;
 `;
 
@@ -84,12 +86,18 @@ export const TopSection = styled.div`
 export const MainHeader = styled.h2`
   text-align: center;
   font-size: 40px;
+  @media only screen and (max-width: 576px) {
+    font-size: 30px ;
+  }
   text-transform: uppercase;
 `;
 
 export const MainHeaderShadow = styled.h1`
   text-align: center;
   font-size: 80px;
+  @media only screen and (max-width: 576px) {
+    font-size: 60px ;
+  }
   left: 0;
   letter-spacing: 10px;
   line-height: 0.7;
@@ -157,7 +165,7 @@ export const AboutMeSection = styled.section`
   text-align: justify;
   box-shadow: 0 10px 10px -5px;
   margin-bottom: 15%;
-  font-size: 16px;
+  font-size: 18px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -169,7 +177,8 @@ export const AboutMeSection = styled.section`
 
   p {
     padding-left: 4%;
-    font-style: italic;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
   }
 `;
 

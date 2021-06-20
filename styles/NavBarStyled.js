@@ -21,7 +21,7 @@ export const NavbarContainer = styled.header`
 
 
 export const NavContent = styled.div`
-  width: 80%;
+  width: 100%;
   margin: auto;
   padding: 0 30px;
   display: flex;
@@ -55,7 +55,8 @@ export const NavOption = styled.p`
   text-decoration: none;
   color: #eaeaea;
   font-size: 24px;
-  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
   display: block;
   cursor: pointer;
   padding: 0 2%;
@@ -80,6 +81,19 @@ export const BurgerNav = styled(FontAwesomeIcon)`
   margin: 4%;
   @media only screen and (min-width: 1024px) {
     display: none;
+    transition: display 0.5s;
   }
+`;
+
+export const CloseSideNav = styled(FontAwesomeIcon)`
+  margin: 4%;
+  z-index: 9;
+  transition: all 0.5s;
+  @media only screen and (min-width: 1024px) {
+    display: none;
+  }
+  ${ (props) => props.show === false && css`
+      display: none;
+  ` }
 `;
 

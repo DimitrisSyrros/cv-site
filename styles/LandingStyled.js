@@ -63,6 +63,9 @@ export const Greeting = styled.h2`
 export const Introduction = styled.div`
   width: 100%;
   font-size: 36px;
+  @media only screen and (max-width: 576px) {
+    font-size: 34px ;
+  }
   font-weight: 700;
   white-space: nowrap;
   display: flex;
@@ -73,6 +76,9 @@ export const Name = styled.h1`
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 2%;
+  @media only screen and (max-width: 576px) {
+    font-size: 36px ;
+  }
   ${ ( props ) => props.className === "yellow" && css `
     color: #f9c959;
   `}

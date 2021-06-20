@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import {NavbarContainer, NavLogo, NavOption, NavContent, BurgerNav} from "../../styles/NavBarStyled"
+import {NavbarContainer, NavLogo, NavOption, NavContent, BurgerNav, CloseSideNav} from "../../styles/NavBarStyled"
 import DownloadFile from "../DownloadFile/DownloadFile"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFilePdf} from "@fortawesome/free-regular-svg-icons";
-import {faBars} from "@fortawesome/free-solid-svg-icons";
+import {faBars, faTimes} from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = (props) => {
     const navigateTo = (ref) => {
@@ -23,6 +23,7 @@ const Navbar = (props) => {
                 <NavOption><DownloadFile src="/cv.pdf"><FontAwesomeIcon icon={faFilePdf} color={"#eaeaea"} title={"cv-download"} /></DownloadFile></NavOption>
             </NavContent>
             <BurgerNav icon={faBars} color={"#eaeaea"} onClick={()=>setOpenNav(!openNav)}/>
+            <CloseSideNav icon={faTimes} color={"#eaeaea"} onClick={()=>setOpenNav(!openNav)} show={openNav}/>
         </NavbarContainer>);
 
 }
