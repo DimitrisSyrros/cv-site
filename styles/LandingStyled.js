@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components';
 
-export const LandingContainer = styled.div`
-  height: 100vh;
+export const LandingContainer = styled.section`
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
   background: url("../../Landing_page.jpg") no-repeat no-repeat center center;
   background-size: cover;
   @media only screen and (max-width: 425px) {

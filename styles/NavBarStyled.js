@@ -21,7 +21,7 @@ export const NavbarContainer = styled.header`
 
 
 export const NavContent = styled.div`
-  width: 80vw;
+  width: 80%;
   margin: auto;
   padding: 0 30px;
   display: flex;
@@ -44,7 +44,9 @@ export const NavContent = styled.div`
     left: 0;
     width: 100%;
     background: transparent;
-    height: 100%;
+    //height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    //height: calc(var(--vh, 1vh) * 100);
+    height: 20%;
     justify-content: center;
   }
 `;

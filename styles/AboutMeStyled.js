@@ -24,7 +24,7 @@ export const LangLogo = styled(FontAwesomeIcon)`
 
 export const Timestamp = styled.span`
   color: #ffffff;
-  font-size: small;
+  font-size: 12px;
   padding: 5px 10px;
   border-radius: 20px;
   font-weight: 600;
@@ -39,17 +39,18 @@ export const YellowSpan = styled.span`
 export const EntryTitle = styled.h4`
   color: #f9c959;
   font-weight: 300;
+  font-size: 19px;
 `;
 
 export const SectionHeader = styled.h3`
-  font-size: x-large;
+  font-size: 24px;
   font-style: italic;
   text-align: center;
 `;
 
 
 export const TimeLineDetails = styled.p`
-  font-size: medium;
+  font-size: 16px;
   color: #d3dbe8;
 `;
 
@@ -68,7 +69,7 @@ export const TimeLineGrid = styled.div`
 `;
 
 
-export const AboutMeContainer = styled.div`
+export const AboutMeContainer = styled.section`
   padding: 3%;
 `;
 
@@ -82,13 +83,13 @@ export const TopSection = styled.div`
 
 export const MainHeader = styled.h2`
   text-align: center;
-  font-size: 5vh;
+  font-size: 40px;
   text-transform: uppercase;
 `;
 
 export const MainHeaderShadow = styled.h1`
   text-align: center;
-  font-size: 10vh;
+  font-size: 80px;
   left: 0;
   letter-spacing: 10px;
   line-height: 0.7;
@@ -127,7 +128,7 @@ export const Box = styled.div`
 
   &:hover {
     .name {
-      top: 12vh;
+      top: 12%;
       opacity: 1;
     }
   }
@@ -148,7 +149,7 @@ export const LangName = styled.h5`
   z-index: 10;
 `;
 
-export const AboutMeDiv = styled.div`
+export const AboutMeSection = styled.section`
   padding: 3%;
   background: #eaeaea;
   color: #292C30;

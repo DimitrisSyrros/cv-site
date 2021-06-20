@@ -5,7 +5,7 @@ export const ContactMeWrapper = styled.section`
   padding: 3%;
 `;
 
-export const MainWrapper = styled.section`
+export const MainWrapper = styled.div`
   padding-bottom: 15%;
   display: flex;
   flex-direction: row;
@@ -70,7 +70,7 @@ export const StyledForm = styled.form`
     margin-left: 0;
     margin-top: 15%;
     width: 89%;
-    height: 90vh;
+    height: 90%;
   }
   padding: 1%;
   align-items: stretch;
@@ -113,11 +113,11 @@ export const FormTextArea = styled.textarea`
   height: 100px;
   margin: 2%;
   border-radius: 10px;
-  max-height: 30vh;
-  max-width: 34vw;
+  max-height: 30%;
+  max-width: 34%;
   @media only screen and (max-width: 768px) {
-    max-width: 85vw;
-    max-height: 50vh;
+    max-width: 85%;
+    max-height: 50%;
 
   }
 `;
