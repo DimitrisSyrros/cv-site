@@ -164,7 +164,6 @@ export const AboutMeSection = styled.section`
   font-weight: 700;
   text-align: justify;
   box-shadow: 0 10px 10px -5px;
-  margin-bottom: 15%;
   font-size: 18px;
   display: flex;
   flex-wrap: nowrap;
