@@ -87,7 +87,7 @@ export const MainHeader = styled.h2`
   text-align: center;
   font-size: 40px;
   @media only screen and (max-width: 576px) {
-    font-size: 30px ;
+    font-size: 25px ;
   }
   text-transform: uppercase;
 `;
@@ -96,7 +96,7 @@ export const MainHeaderShadow = styled.h1`
   text-align: center;
   font-size: 80px;
   @media only screen and (max-width: 576px) {
-    font-size: 60px ;
+    font-size: 50px ;
   }
   left: 0;
   letter-spacing: 10px;
