@@ -7,7 +7,7 @@ import {faBriefcase, faUniversity} from '@fortawesome/free-solid-svg-icons';
 
 const EducExp = forwardRef((props,ref) => {
     const list = timelineData.map((item, index) =>
-        <TimeLineEntry key={index}>
+        <TimeLineEntry key={item.ID}>
             <TopSection>
             {
                 item.type === "faUniversity" ?
