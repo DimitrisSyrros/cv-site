@@ -28,19 +28,33 @@ const Home = () => {
         <HomeContainer>
             <GlobalStyle/>
             <Head>
+                <!-- Primary Meta Tags -->
                 <title>Dimitris Syrros | Frontend-Developer</title>
-                <meta property="og:url" content="www.dsyrros.com" key="ogurl" />
-                <meta property="og:image" content="/public/profile.jpeg" key="ogimage" />
-                <meta property="og:site_name" content="Dimitris Syrros | Frontend-Developer" key="ogsitename" />
-                <meta property="og:title" content="Dimitris Syrros | Frontend-Developer" key="ogtitle" />
-                <meta property="og:description" content="This site is a portfolio for Dimitris Syrros." key="ogdesc" />
+                <meta name="title" content="Dimitris Syrros | Frontend-Developer"/>
+                <meta name="description"
+                      content="This site is a portfolio for Dimitris Syrros. Here you can get information about him, download his resume and get in contact with him."/>
+
+                <!-- Open Graph / Facebook -->
+                <meta property="og:type" content="website"/>
+                <meta property="og:url" content="https://www.dsyrros.com/"/>
+                <meta property="og:title" content="Dimitris Syrros | Frontend-Developer"/>
+                <meta property="og:description"
+                      content="This site is a portfolio for Dimitris Syrros. Here you can get information about him, download his resume and get in contact with him."/>
+                <meta property="og:image" content="/public/profile.jpeg"/>
+
+                <!-- Twitter -->
+                <meta property="twitter:card" content="summary_large_image"/>
+                <meta property="twitter:url" content="https://www.dsyrros.com/"/>
+                <meta property="twitter:title" content="Dimitris Syrros | Frontend-Developer"/>
+                <meta property="twitter:description"
+                      content="This site is a portfolio for Dimitris Syrros. Here you can get information about him, download his resume and get in contact with him."/>
+                <meta property="twitter:image" content="/public/profile.jpeg"/>
                 <link rel="icon" type="image/svg+xml" href="/public/assets/favicon.svg"/>
                 <link rel="icon" type="image/png" href="/public/assets/favicon.png"/>
-                <meta name="description" content="This site is a portfolio for Dimitris Syrros."/>
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta charSet="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <meta charSet="utf-8"/>
             </Head>
-            <Navbar refs={{homeRef,aboutMeRef,contactRef}}/>
+            <Navbar refs={{homeRef, aboutMeRef, contactRef}}/>
             <LandingPage ref={homeRef}/>
             <AboutMe/>
             <EducExp ref={aboutMeRef}/>
