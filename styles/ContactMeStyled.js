@@ -75,7 +75,6 @@ export const StyledForm = styled.form`
     margin-left: 0;
     margin-top: 15%;
     width: 89%;
-    height: 90%;
   }
   padding: 1%;
   align-items: stretch;

@@ -8,7 +8,6 @@ export const TimeLineEntry = styled.article`
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
-  height: 100%;
   padding-left: 1%;
   border-left: 1.5px solid #333;
   margin-top: 2%;

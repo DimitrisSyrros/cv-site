@@ -38,16 +38,16 @@ const Home = () => {
                 <meta property="og:title" content="Dimitris Syrros | Frontend-Developer"/>
                 <meta property="og:description"
                       content="This site is a portfolio for Dimitris Syrros. Here you can get information about him, download his resume and get in contact with him."/>
-                <meta property="og:image" content="/public/profile.jpeg"/>
+                <meta property="og:image" content="../profile.jpeg"/>
 
                 <meta property="twitter:card" content="summary_large_image"/>
                 <meta property="twitter:url" content="https://www.dsyrros.com/"/>
                 <meta property="twitter:title" content="Dimitris Syrros | Frontend-Developer"/>
                 <meta property="twitter:description"
                       content="This site is a portfolio for Dimitris Syrros. Here you can get information about him, download his resume and get in contact with him."/>
-                <meta property="twitter:image" content="/public/profile.jpeg"/>
-                <link rel="icon" type="image/svg+xml" href="../public/assets/favicon.svg"/>
-                <link rel="icon" type="image/png" href="../public/assets/favicon.png"/>
+                <meta property="twitter:image" content="../profile.jpeg"/>
+                <link rel="icon" type="image/svg+xml" href="../public/favicon.svg"/>
+                <link rel="icon" type="image/png" href="../public/favicon.png"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <meta charSet="utf-8"/>
             </Head>
