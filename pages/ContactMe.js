@@ -23,7 +23,9 @@ const ContactMe = forwardRef((props, ref) => {
             <MainHeaderShadow transformation='-203%'>Contact</MainHeaderShadow>
             <MainWrapper>
                 <InfoBox>
-                    <Image src="/profile.jpeg" alt="profile_picture" id="profile" width="300" height="300"/>
+                    <div id={"halo"} style={{background:"conic-gradient(from 270deg, #fe5848 10%, #f9c959 35%, #bde5c9, #8dc98f, #006792 72% 75%, #fe5848 95%)",borderRadius:"50%", width:"310px", height:"310px"}}>
+                    <img src="/profile.jpeg" alt="profile_picture" id="profile" width="300" height="300"/>
+                    </div>
                     <ContactInfo>
                         <h2>Feel free to <YellowSpan>contact</YellowSpan> me.</h2>
                         <ContactLink>

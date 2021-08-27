@@ -72,6 +72,8 @@ export const TimeLineGrid = styled.div`
 
 export const AboutMeContainer = styled.section`
   padding: 3%;
+  background: url("../../blob-background2.svg") no-repeat no-repeat center center;
+  background-size: cover;
 `;
 
 export const TopSection = styled.div`

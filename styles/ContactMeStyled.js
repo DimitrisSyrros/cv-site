@@ -16,9 +16,12 @@ export const MainWrapper = styled.div`
   @media only screen and (max-width: 768px) {
     flex-direction: column;
   }
-  #profile{
-    border-radius: 50%;
-  }
+  //#profile{
+  //  border-radius: 50%;
+  //  top: 50%;
+  //  left: 50%;
+  //  transform: translate(-50%, -50%);
+  //}
 `;
 
 export const ContactInfo = styled.div`
@@ -55,6 +58,21 @@ export const InfoBox = styled.div`
   padding: 2%;
   border-radius: 12px;
   box-shadow: -5px -5px 30px 5px #fe5848, 5px 5px 30px 5px #006792;
+  #halo{
+    position: relative;
+    & >* {
+      position: absolute !important;
+      padding: 0!important;
+      margin:0!important;
+    }
+    text-align: center!important;
+    }
+  #profile{
+    border-radius: 50%;
+    left: 50%!important;
+    top: 50%!important;
+    transform: translate(-50%, -50%)!important;
+  }
 `;
 
 export const StyledAnchor = styled.a`

@@ -3,10 +3,11 @@ import styled, { css } from 'styled-components';
 export const LandingContainer = styled.section`
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
-  background: url("../../Landing_page.jpg") no-repeat no-repeat center center;
+  background: url("../../blob-background.svg") no-repeat no-repeat center center;
   background-size: cover;
   @media only screen and (max-width: 425px) {
-    background: url("../../Landing_page.jpg") no-repeat no-repeat center right;
+    background: url("../../blob-background.svg") no-repeat no-repeat top right;
+    background-size: cover;
   }
 `;
 
@@ -79,7 +80,7 @@ export const Name = styled.h1`
   @media only screen and (max-width: 576px) {
     font-size: 36px ;
   }
-  ${ ( props ) => props.className === "yellow" && css `
+  ${ ( props ) =>props.className && props.className.includes("yellow") && css `
     color: #f9c959;
   `}
 `;
