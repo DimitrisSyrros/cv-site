@@ -1,5 +1,4 @@
 import React, {forwardRef} from 'react';
-import Image from "next/image";
 import {
     ContactMeWrapper,
     StyledAnchor,
@@ -8,12 +7,15 @@ import {
     InfoBox,
     ContactLink,
     ContactLogo,
+    LoveLogo,
+    MadeWithLove,
     MainWrapper
 } from "../styles/ContactMeStyled";
 import {faEnvelope} from "@fortawesome/free-regular-svg-icons";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import ContactForm from "../components/ContactForm/ContactForm";
 import {MainHeader, MainHeaderShadow, YellowSpan} from "../styles/AboutMeStyled";
+import {faHeart} from "@fortawesome/free-solid-svg-icons";
 
 
 const ContactMe = forwardRef((props, ref) => {
@@ -48,6 +50,7 @@ const ContactMe = forwardRef((props, ref) => {
                 </InfoBox>
                 <ContactForm/>
             </MainWrapper>
+            <MadeWithLove>Made with <LoveLogo icon={faHeart} color="red"/> by Dimitris Syrros</MadeWithLove>
         </ContactMeWrapper>
     );
 })

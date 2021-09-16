@@ -47,6 +47,21 @@ export const ContactLogo = styled(FontAwesomeIcon)`
   margin-right: 2%;
 `;
 
+export const MadeWithLove = styled.span`
+  font-size: 0.8rem;
+  text-align: center;
+  margin-left: 45%;
+  margin-right: auto;
+` ;
+
+export const LoveLogo = styled(FontAwesomeIcon)`
+  animation: pound .35s infinite alternate;
+  @keyframes pound {
+    to {
+      transform: scale(1.1)
+    }
+  }
+`;
 export const StyledPar = styled.p`
   &:hover{
     transition: 0.3s ease-in;
