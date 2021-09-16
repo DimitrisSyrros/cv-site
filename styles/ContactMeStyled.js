@@ -50,8 +50,7 @@ export const ContactLogo = styled(FontAwesomeIcon)`
 export const MadeWithLove = styled.span`
   font-size: 0.8rem;
   text-align: center;
-  margin-left: 45%;
-  margin-right: auto;
+  display: block;
 ` ;
 
 export const LoveLogo = styled(FontAwesomeIcon)`
