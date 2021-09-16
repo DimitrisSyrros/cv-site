@@ -15,16 +15,20 @@ const Home = () => {
     useEffect(() => {
         window.addEventListener("resize", function () {
             let vh = window.innerHeight * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
             let vw = window.innerWidth * 0.01;
-            document.documentElement.style.setProperty('--vw', `${vw}px`);
+            if(document.documentElement.style.getPropertyValue('--vw') !== vw.toString()) {
+                document.documentElement.style.setProperty('--vh', `${vh}px`);
+                document.documentElement.style.setProperty('--vw', `${vw}px`);
+            }
         });
         return() => {
             window.removeEventListener("resize", function () {
                 let vh = window.innerHeight * 0.01;
-                document.documentElement.style.setProperty('--vh', `${vh}px`);
                 let vw = window.innerWidth * 0.01;
-                document.documentElement.style.setProperty('--vw', `${vw}px`);
+                if(document.documentElement.style.getPropertyValue('--vw') !== vw.toString()) {
+                    document.documentElement.style.setProperty('--vh', `${vh}px`);
+                    document.documentElement.style.setProperty('--vw', `${vw}px`);
+                }
             });
         }
     }, [])
@@ -50,8 +54,8 @@ const Home = () => {
                 <meta property="twitter:description"
                       content="This site is a portfolio for Dimitris Syrros. Here you can get information about him, download his resume and get in contact with him."/>
                 <meta property="twitter:image" content="../profile.jpeg"/>
-                <link rel="icon" type="image/svg+xml" href="../public/favicon.svg"/>
-                <link rel="icon" type="image/png" href="../public/favicon.png"/>
+                <link rel="icon" type="image/svg+xml" href="../favicon.svg"/>
+                <link rel="icon" type="image/png" href="../favicon.png"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <meta charSet="utf-8"/>
             </Head>
