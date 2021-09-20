@@ -1,10 +1,11 @@
-import React, {forwardRef} from "react";
+import React, {forwardRef, useContext} from "react";
 import {LandingContainer, Greeting, Introduction, Name, GreetingWrapper, BackgroundOverlay} from '../styles/LandingStyled';
-
+import {ThemeContext} from "styled-components"
 const LandingPage = forwardRef((props,ref) => {
+    const themeContext = useContext(ThemeContext);
 
     return (
-        <LandingContainer ref={ref}>
+        <LandingContainer ref={ref} background={themeContext.background}>
             <BackgroundOverlay>
                 <GreetingWrapper>
                     <Greeting>
@@ -14,7 +15,7 @@ const LandingPage = forwardRef((props,ref) => {
                         <Name>I'm</Name>
                         <Name className="yellow">Dimitris Syrros</Name>
                     </Introduction>
-                    <p>I make fun things for the web.</p>
+                    <p style={{color:themeContext.greetingColor}}>I make fun things for the web.</p>
                 </GreetingWrapper>
             </BackgroundOverlay>
         </LandingContainer>

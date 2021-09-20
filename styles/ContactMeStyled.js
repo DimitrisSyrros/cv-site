@@ -3,6 +3,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export const ContactMeWrapper = styled.section`
   padding: 3%;
+  background: ${({ theme }) => theme.contactBackground};
 `;
 
 export const MainWrapper = styled.div`
@@ -69,6 +70,7 @@ export const StyledPar = styled.p`
 `;
 
 export const InfoBox = styled.div`
+  background: ${({ theme }) => theme.contactObjColor};
   padding: 2%;
   border-radius: 12px;
   box-shadow: -5px -5px 30px 5px #fe5848, 5px 5px 30px 5px #006792;
@@ -91,7 +93,7 @@ export const InfoBox = styled.div`
 
 export const StyledAnchor = styled.a`
   text-decoration: none;
-  color: white;
+  color: ${({ theme }) => theme.basicColor};
     &:hover{
       cursor: pointer;
       transition: 0.3s ease-in;
@@ -100,6 +102,7 @@ export const StyledAnchor = styled.a`
 `;
 
 export const StyledForm = styled.form`
+  background: ${({ theme }) => theme.contactObjColor};
   display: flex;
   flex-direction: column;
   margin-left: 5%;

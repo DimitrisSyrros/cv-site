@@ -3,10 +3,10 @@ import styled, { css } from 'styled-components';
 export const LandingContainer = styled.section`
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
-  background: url("../../blob-background.svg") no-repeat no-repeat center center;
+  background: url(${(props)=>props.background}) no-repeat no-repeat center center;
   background-size: cover;
   @media only screen and (max-width: 425px) {
-    background: url("../../blob-background.svg") no-repeat no-repeat top right;
+    background: url(${(props)=>props.background})  no-repeat no-repeat top right;
     background-size: cover;
   }
 `;
@@ -14,7 +14,6 @@ export const LandingContainer = styled.section`
 export const BackgroundOverlay = styled.div`
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,6 +38,7 @@ export const Greeting = styled.h2`
   letter-spacing: .15em;
   animation: typing 0.9s steps(40, end), blink-caret 0.75s step-end infinite;
   width: fit-content;
+  color: ${({ theme }) => theme.greetingColor};
   
   @keyframes typing {
     from {
@@ -77,10 +77,11 @@ export const Name = styled.h1`
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 2%;
+  color: ${({ theme }) => theme.greetingColor};
   @media only screen and (max-width: 576px) {
     font-size: 36px ;
   }
   ${ ( props ) =>props.className && props.className.includes("yellow") && css `
-    color: #f9c959;
+    color: ${({ theme }) => theme.headerColor};
   `}
 `;

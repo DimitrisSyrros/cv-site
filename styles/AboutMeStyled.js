@@ -22,21 +22,21 @@ export const LangLogo = styled(FontAwesomeIcon)`
 `;
 
 export const Timestamp = styled.span`
-  color: #ffffff;
+  color: ${({ theme }) => theme.basicColor};
   font-size: 12px;
   padding: 5px 10px;
   border-radius: 20px;
   font-weight: 600;
-  background-color: #252525;
+  background-color: ${({ theme }) => theme.backgroundColor};
   opacity: .8;
 `;
 
 export const YellowSpan = styled.span`
-  color: #f9c959;
+  color: ${({ theme }) => theme.headerColor};
 `;
 
 export const EntryTitle = styled.h4`
-  color: #f9c959;
+  color: ${({ theme }) => theme.headerColor};
   font-family: 'Oswald', sans-serif;
   font-weight: 500;  
   font-size: 19px;
@@ -52,7 +52,8 @@ export const SectionHeader = styled.h3`
 
 export const TimeLineDetails = styled.p`
   font-size: 16px;
-  color: #d3dbe8;
+  font-weight: 600;
+  color: ${({ theme }) => theme.secondaryColor};
 `;
 
 
@@ -72,7 +73,10 @@ export const TimeLineGrid = styled.div`
 
 export const AboutMeContainer = styled.section`
   padding: 3%;
-  background: url("../../blob-background2.svg") no-repeat no-repeat center center;
+  background: url(${(props)=>props.background}) no-repeat no-repeat center center;
+  ${ (props) => props.themeName === "light" && css`
+    ${({ theme }) => theme.backgroundColor};
+  ` }
   background-size: cover;
 `;
 
@@ -148,7 +152,7 @@ export const LangName = styled.h5`
   top: 0;
   left: 0;
   text-align: center;
-  color: #fff;
+  color: ${({ theme }) => theme.basicColor};
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
@@ -161,7 +165,7 @@ export const LangName = styled.h5`
 export const AboutMeSection = styled.section`
   padding: 3%;
   background: #eaeaea;
-  color: #292C30;
+  color: #212326;
   font-weight: 700;
   text-align: justify;
   box-shadow: 0 10px 10px -5px;

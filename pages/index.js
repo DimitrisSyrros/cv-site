@@ -6,7 +6,6 @@ import EducExp from "./EducExp";
 import AboutMe from "./AboutMe"
 import ContactMe from "./ContactMe";
 import Navbar from "../components/Navbar/NavBar";
-import {GlobalStyle} from "../styles/Globals";
 
 const Home = () => {
     const homeRef = useRef(null)
@@ -34,7 +33,6 @@ const Home = () => {
     }, [])
     return (
         <HomeContainer>
-            <GlobalStyle/>
             <Head>
                 <title>Dimitris Syrros | Frontend-Developer</title>
                 <meta name="title" content="Dimitris Syrros | Frontend-Developer"/>
