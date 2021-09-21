@@ -29,6 +29,7 @@ export const NavContent = styled.div`
   align-items: center;
   justify-content: space-evenly;
   height: 100vh;
+  z-index: 8;
   position: absolute;
   top: 0;
   left: -100%;

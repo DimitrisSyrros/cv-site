@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMoon, faSun} from "@fortawesome/free-regular-svg-icons";
 
 function MyApp({Component, pageProps}) {
-    const [theme, setTheme] = useState("light")
+    const [theme, setTheme] = useState("dark")
 
     const toggleTheme = () => {
         theme === 'light' ? setTheme('dark') : setTheme('light')
@@ -19,7 +19,7 @@ function MyApp({Component, pageProps}) {
             zIndex: "2000",
             top: "12vh",
             left: "2vw",
-            fontSize: "2.2rem",
+            fontSize: "1.2rem",
             cursor: "pointer",
         }}/>
         <Component {...pageProps}

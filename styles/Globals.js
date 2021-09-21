@@ -48,12 +48,3 @@ export const GlobalStyle = createGlobalStyle`
   }
 
 `;
-
-export const ThemeIcon = styled(FontAwesomeIcon)`
-    position: fixed;
-    top: 12vh;
-    left: 2vw;
-    font-size: 2.2rem;
-    z-index: 50000;
-    cursor: pointer;
-  `;
