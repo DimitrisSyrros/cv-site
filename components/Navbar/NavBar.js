@@ -4,8 +4,11 @@ import DownloadFile from "../DownloadFile/DownloadFile"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFilePdf} from "@fortawesome/free-regular-svg-icons";
 import {faBars, faTimes} from "@fortawesome/free-solid-svg-icons";
+import useDarkMode from "use-dark-mode";
+import {faMoon, faSun} from "@fortawesome/free-regular-svg-icons";
 
 const Navbar = (props) => {
+    const darkMode = useDarkMode(true);
     const navigateTo = (ref) => {
         if (ref !== null) {
             ref.current.scrollIntoView({behavior: 'smooth'})
@@ -21,6 +24,7 @@ const Navbar = (props) => {
                 <NavOption onClick={()=>{navigateTo(props.refs.aboutMeRef)}}>About Me</NavOption>
                 <NavOption onClick={()=>{navigateTo(props.refs.contactRef)}}>Contact</NavOption>
                 <NavOption><DownloadFile src="/cv.pdf"><FontAwesomeIcon icon={faFilePdf} color={"#eaeaea"} title={"cv-download"} /></DownloadFile></NavOption>
+                <NavOption><FontAwesomeIcon onClick={darkMode.toggle} icon={darkMode.value === true ? faMoon : faSun} /></NavOption>
             </NavContent>
             <BurgerNav icon={faBars} color={"#eaeaea"} onClick={()=>setOpenNav(!openNav)}/>
             <CloseSideNav icon={faTimes} color={"#eaeaea"} onClick={()=>setOpenNav(!openNav)} show={openNav}/>

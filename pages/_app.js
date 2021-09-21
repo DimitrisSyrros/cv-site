@@ -1,27 +1,15 @@
-import {useState} from "react"
 import {ThemeProvider} from "styled-components";
-import {lightTheme, darkTheme, GlobalStyle, ThemeIcon} from "../styles/Globals"
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faMoon, faSun} from "@fortawesome/free-regular-svg-icons";
+import {lightTheme, darkTheme, GlobalStyle} from "../styles/Globals"
+
+import useDarkMode from "use-dark-mode";
 
 function MyApp({Component, pageProps}) {
-    const [theme, setTheme] = useState("dark")
-
-    const toggleTheme = () => {
-        theme === 'light' ? setTheme('dark') : setTheme('light')
-    }
+    const darkMode = useDarkMode(true);
+    const theme = darkMode.value ? darkTheme : lightTheme
 
 
-    return <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+    return <ThemeProvider theme={theme}>
         <GlobalStyle/>
-        <FontAwesomeIcon onClick={toggleTheme} icon={theme === 'light' ? faMoon : faSun} style={{
-            position: "fixed",
-            zIndex: "2000",
-            top: "12vh",
-            left: "2vw",
-            fontSize: "1.2rem",
-            cursor: "pointer",
-        }}/>
         <Component {...pageProps}
         /></ThemeProvider>
 }
