@@ -3,9 +3,8 @@ import {NavbarContainer, NavLogo, NavOption, NavContent, BurgerNav, CloseSideNav
 import DownloadFile from "../DownloadFile/DownloadFile"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFilePdf} from "@fortawesome/free-regular-svg-icons";
-import {faBars, faTimes} from "@fortawesome/free-solid-svg-icons";
+import {faBars, faTimes, faMoon, faSun} from "@fortawesome/free-solid-svg-icons";
 import useDarkMode from "use-dark-mode";
-import {faMoon, faSun} from "@fortawesome/free-regular-svg-icons";
 
 const Navbar = (props) => {
     const darkMode = useDarkMode(true);

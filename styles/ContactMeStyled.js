@@ -40,7 +40,7 @@ export const ContactLink = styled.div`
   justify-content: flex-start;
   text-align: justify;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: var(--fs-small);
   padding-left: 21%;
 `;
 
@@ -49,7 +49,7 @@ export const ContactLogo = styled(FontAwesomeIcon)`
 `;
 
 export const MadeWithLove = styled.span`
-  font-size: 0.8rem;
+  font-size: var(--fs-xsmall);
   text-align: center;
   display: block;
 ` ;

@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from 'styled-components'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export const lightTheme = {
     backgroundColor: "#2b6777",
@@ -25,7 +24,13 @@ export const darkTheme = {
     background2: "../../blob-background2.svg",
     contactBackground: "#292C30",
     greetingColor: "white",
-    contactObjColor:"#292C30"
+    contactObjColor:"#292C30",
+    fsXXXL:"",
+    fsXXL:"",
+    fsXL:"",
+    fsL:"",
+    fsMD:"",
+    fsSM:""
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -47,4 +52,13 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  :root{
+    --fs-xsmall: 12px;
+    --fs-small: 15px;
+    --fs-medium: 17px;
+    --fs-large: 19px;
+    --fs-xlarge: 24px;
+    --fs-xxlarge: 40px;
+    --fs-xxxlarge: 80px;
+  }
 `;

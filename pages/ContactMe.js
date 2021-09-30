@@ -14,7 +14,7 @@ import {
 import {faEnvelope} from "@fortawesome/free-regular-svg-icons";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import ContactForm from "../components/ContactForm/ContactForm";
-import {MainHeader, MainHeaderShadow, YellowSpan} from "../styles/AboutMeStyled";
+import {MainHeader, MainHeaderShadow, YellowSpan, CardTitle} from "../styles/AboutMeStyled";
 import {faHeart} from "@fortawesome/free-solid-svg-icons";
 
 
@@ -29,7 +29,7 @@ const ContactMe = forwardRef((props, ref) => {
                     <img src="/profile.jpeg" alt="profile_picture" id="profile" width="300" height="300"/>
                     </div>
                     <ContactInfo>
-                        <h2>Feel free to <YellowSpan>contact</YellowSpan> me.</h2>
+                        <CardTitle>Feel free to <YellowSpan>contact</YellowSpan> me.</CardTitle>
                         <ContactLink>
                             <ContactLogo icon={faLinkedin}/>
                             <StyledAnchor

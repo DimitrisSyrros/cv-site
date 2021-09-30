@@ -15,7 +15,6 @@ export const LoaderContainer = styled.div`
       stroke-dasharray: 198px;
       stroke-dashoffset: 198px;
       animation: line-animation 2s ease forwards, fill-to-white 0.5s ease forwards 2s;
-     // animation: fill-to-white 3s ease forwards;
     }
     //s-fill
     #two{
@@ -59,7 +58,7 @@ export const LoaderContainer = styled.div`
   }
   @keyframes fill-to-black{
     to{
-      fill: black;
+      fill: ${({ theme }) => theme.backgroundColor};
     }
   }
 `;

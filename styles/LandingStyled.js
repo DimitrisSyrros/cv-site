@@ -39,6 +39,7 @@ export const Greeting = styled.h2`
   animation: typing 0.9s steps(40, end), blink-caret 0.75s step-end infinite;
   width: fit-content;
   color: ${({ theme }) => theme.greetingColor};
+  font-size: var(--fs-xlarge);
   
   @keyframes typing {
     from {
@@ -73,7 +74,7 @@ export const Introduction = styled.div`
 `;
 
 export const Name = styled.h1`
-  font-size: 38px;
+  font-size: var(--fs-xxlarge);
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 2%;
