@@ -115,7 +115,7 @@ export const StyledForm = styled.form`
   align-items: stretch;
   border-radius: 10px;
   box-shadow: -5px -5px 30px 5px #397b68, 5px 5px 30px 5px #006792;
-  width: 40%;
+  min-width: 100%;
 `;
 export const StyledInput = styled.input`
   padding: 1%;
