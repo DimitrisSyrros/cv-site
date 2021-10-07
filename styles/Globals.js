@@ -10,8 +10,9 @@ export const lightTheme = {
     background2: "../../light-background2-.svg",
     contactBackground: "darkcyan",
     greetingColor: "#2b6777",
-    contactObjColor:"#2b6777"
-
+    contactObjColor:"#2b6777",
+    scrollbarBg: "#d3dbe8",
+    cursor: "/light-cursor.svg"
 }
 
 export const darkTheme = {
@@ -25,12 +26,8 @@ export const darkTheme = {
     contactBackground: "#292C30",
     greetingColor: "white",
     contactObjColor:"#292C30",
-    fsXXXL:"",
-    fsXXL:"",
-    fsXL:"",
-    fsL:"",
-    fsMD:"",
-    fsSM:""
+    scrollbarBg: "#292C30",
+    cursor: "/cursor.svg"
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -46,10 +43,12 @@ export const GlobalStyle = createGlobalStyle`
     height: calc(var(--vh, 1vh) * 100);
     overflow-x: hidden;
     transition: all 0.50s linear;
+    cursor: url(${({ theme }) => theme.cursor}), auto;
   }
 
   * {
     box-sizing: border-box;
+    scrollbar-width: thin;
   }
 
   :root{
@@ -60,5 +59,20 @@ export const GlobalStyle = createGlobalStyle`
     --fs-xlarge: 24px;
     --fs-xxlarge: 40px;
     --fs-xxxlarge: 80px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0.8em;
+  }
+  
+  ::-webkit-scrollbar-track{
+    background: ${({ theme }) => theme.scrollbarBg};
+    border-radius: 100vw;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background: linear-gradient(#fe5848, #006792);
+    border-radius: 100vw;
+    border: 0.25em solid ${({ theme }) => theme.scrollbarBg};
   }
 `;
