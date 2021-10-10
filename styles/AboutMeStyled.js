@@ -143,5 +143,6 @@ export const Summary = styled.p`
   font-size: var(--fs-large);
   @media only screen and (max-width: 576px) {
     font-size: var(--fs-medium);
+    margin-right: 2%;
   }
 `;
