@@ -80,7 +80,7 @@ export const Name = styled.h1`
   margin-right: 2%;
   color: ${({ theme }) => theme.greetingColor};
   @media only screen and (max-width: 576px) {
-    font-size: 36px ;
+    font-size: 34px ;
   }
   ${ ( props ) =>props.className && props.className.includes("yellow") && css `
     color: ${({ theme }) => theme.headerColor};

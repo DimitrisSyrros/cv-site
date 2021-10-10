@@ -6,7 +6,7 @@ export const timelineData = [
         "details": "Working closely with Intralot integrating and developing Intralot's Canvas software for various national betting providers around the world",
         "type": "faBriefcase",
         "background": "/office.jpg",
-        "readMore" :["Developing interfaces using React.js ( Hooks, Redux ) and Styled Components/SASS","Involved with API development using PHP 7+ and following the MVC design pattern","Implementing changes needed for caching and websocket mechanisms, using Golang and Redis"]
+        "readMore" :["Developing interfaces using React.js ( Hooks, Redux ) and Styled Components/SASS","Involved with API development using PHP 7+ and following the MVC design pattern","Implementing changes needed for caching and WebSocket mechanisms, using Golang and Redis"]
     },
     {
         "ID":"2021_1",

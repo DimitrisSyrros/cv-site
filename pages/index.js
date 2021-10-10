@@ -15,16 +15,16 @@ const Home = () => {
         window.addEventListener("resize", function () {
             let vh = window.innerHeight * 0.01;
             let vw = window.innerWidth * 0.01;
-            if(document.documentElement.style.getPropertyValue('--vw') !== vw.toString()) {
+            if (document.documentElement.style.getPropertyValue('--vw') !== vw.toString()) {
                 document.documentElement.style.setProperty('--vh', `${vh}px`);
                 document.documentElement.style.setProperty('--vw', `${vw}px`);
             }
         });
-        return() => {
+        return () => {
             window.removeEventListener("resize", function () {
                 let vh = window.innerHeight * 0.01;
                 let vw = window.innerWidth * 0.01;
-                if(document.documentElement.style.getPropertyValue('--vw') !== vw.toString()) {
+                if (document.documentElement.style.getPropertyValue('--vw') !== vw.toString()) {
                     document.documentElement.style.setProperty('--vh', `${vh}px`);
                     document.documentElement.style.setProperty('--vw', `${vw}px`);
                 }
@@ -44,14 +44,15 @@ const Home = () => {
                 <meta property="og:title" content="Dimitris Syrros | Frontend-Developer"/>
                 <meta property="og:description"
                       content="This site is a portfolio for Dimitris Syrros. Here you can get information about him, download his resume and get in contact with him."/>
-                <meta property="og:image" content="../profile.jpeg"/>
+                <meta property="og:image" content="https://www.dsyrros.com/profile.jpeg"/>
 
                 <meta property="twitter:card" content="summary_large_image"/>
                 <meta property="twitter:url" content="https://www.dsyrros.com/"/>
                 <meta property="twitter:title" content="Dimitris Syrros | Frontend-Developer"/>
                 <meta property="twitter:description"
                       content="This site is a portfolio for Dimitris Syrros. Here you can get information about him, download his resume and get in contact with him."/>
-                <meta property="twitter:image" content="../profile.jpeg"/>
+                <meta property="twitter:image" content="https://www.dsyrros.com/profile.jpeg"/>
+                <meta property="og:site_name" content="Dimitris Syrros | Frontend-Developer"/>
                 <link rel="icon" type="image/svg+xml" href="../favicon.svg"/>
                 <link rel="icon" type="image/png" href="../favicon.png"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
